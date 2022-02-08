@@ -1,0 +1,19 @@
+{
+  "name": "qrcodewithtoken",
+  "version": "1.0.0",
+  "description": "get qrcode data and auth token, and it will send the required data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourior/QrCodewithToken.git"
+  },
+  "author": "yourior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yourior/QrCodewithToken/issues"
+  },
+  "homepage": "https://github.com/yourior/QrCodewithToken#readme"
+}
