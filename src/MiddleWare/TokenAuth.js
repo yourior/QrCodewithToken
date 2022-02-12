@@ -43,3 +43,16 @@ exports.accessTokenValidator= async (req, res, next) => {
         res.send("Token is Not Authorized");
     }
   }
+
+  function verifyJwtTokenAsync ({ token, secret }) {
+    return new Promise((resolve, reject) => {
+        jwt.verify(token, secret, (err, payload) => {
+        if (err) {
+            const message = err.name === 'TokenExpiredError' ? err.message : 'Unauthorized'
+            return reject(creatError.NotAcceptable(message))
+        }
+        //console.log(payload);
+        resolve(payload)
+        })
+    })
+}
